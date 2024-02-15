@@ -9,7 +9,7 @@ The `.tekton` folder contains Tekton Resource definitions that create a Tekton P
 In order to build and deploy to your own cluster this sample requires parameterization of the following:
 - `apikey` an IBM Cloud API Key
 - `cluster` the name of your IKS cluster where you will be deploying the sample app
-- `clusterNamespace` the namespace in your cluster where the app will be deployed (default: `prod`) (<su-nombre>-ns)
+- `clusterNamespace` the namespace in your cluster where the app will be deployed (default: `prod`) (\<su-nombre>-ns)
 - `clusterRegion` the region where your IKS cluster is located (default: `us-south`)
 - `registryNamespace` the IBM Cloud Container Registry namespace where the app image will be built and stored. (**tekton-handson**)
 - `registryRegion` the region where your  IBM Cloud Container Registry is located (default: `us-south`)
