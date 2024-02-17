@@ -62,8 +62,14 @@ En la vista **Overview** obtendremos los nombres de las integraciones creadas. D
  - **Definitions**: Dé click en **Add** y seleccione su repositorio agregado anteriormente y dé click en **Add** > **Save**.
  - **Worker**: Seleccione el _Worker_ público de su locación y dé click en **Save**.
  - **Environment properties**: Dando click en **Add**, agregue las siguientes propiedades de entorno:
-   - **
-
+   - `apikey` an IBM Cloud API Key
+   - `cluster` the name of your IKS cluster where you will be deploying the sample app
+   - `clusterNamespace` the namespace in your cluster where the app will be deployed (default: `prod`) (**\<su-nombre>-ns**)
+   - `clusterRegion` the region where your IKS cluster is located (default: `us-south`)
+   - `registryNamespace` the IBM Cloud Container Registry namespace where the app image will be built and stored. (**tekton-handson**)
+   - `registryRegion` the region where your  IBM Cloud Container Registry is located (default: `us-south`)
+   - `repository` the source git repository where your resources are cloned (default: `https://github.com/open-toolchain/hello-tekton`). Change this if you are forking this repo
+   - `revision` the branch of the source git repository where your resources are cloned (default: `master`).
 
 INGRESAR IMAGEN 1
 
@@ -86,21 +92,5 @@ INGRESAR IMAGEN 1
 
 Autores: IBM Cloud Tech Sales - Juan Diego Tovar Cárdenas.
 
-
-
-
-
-
+### Links
 Use a Tekton pipeline to build and deploy a simple hello world node application with IBM Cloud Devops ( https://cloud.ibm.com/devops).
-
-The `.tekton` folder contains Tekton Resource definitions that create a Tekton PipelineRun. This "runs" a pipeline that builds a simple node application into an image, scans the image for vulnerabilities, and then deploys the application with IBM Cloud Kubernetes Service.
-
-In order to build and deploy to your own cluster this sample requires parameterization of the following:
-- `apikey` an IBM Cloud API Key
-- `cluster` the name of your IKS cluster where you will be deploying the sample app
-- `clusterNamespace` the namespace in your cluster where the app will be deployed (default: `prod`) (**\<su-nombre>-ns**)
-- `clusterRegion` the region where your IKS cluster is located (default: `us-south`)
-- `registryNamespace` the IBM Cloud Container Registry namespace where the app image will be built and stored. (**tekton-handson**)
-- `registryRegion` the region where your  IBM Cloud Container Registry is located (default: `us-south`)
-- `repository` the source git repository where your resources are cloned (default: `https://github.com/open-toolchain/hello-tekton`). Change this if you are forking this repo
-- `revision` the branch of the source git repository where your resources are cloned (default: `master`).
