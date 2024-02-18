@@ -57,11 +57,13 @@ Ya queda configurado el repositorio, ahora se debe agregar el _Delivery Pipeline
  - Dé click en **Create Integration**.
 Si no hemos creado el _Continuous Delivery_ o lo creamos en un grupo de recursos distinto, se obtiene un mensaje de advertencia donde nos pedirá crearlo _Continuous Delivery service required_.
 
-## Configuración Delivery Pipeline
+INGRESAR IMAGEN 1
+
+### Configuración Delivery Pipeline
 En la vista **Overview** obtendremos los nombres de las integraciones creadas. Dé click sobre la integración del _Delivery Pipeline_. Llene los apartados de la siguiente manera:
  - **Definitions**: Dé click en **Add** y seleccione su repositorio agregado anteriormente y dé click en **Add** > **Save**.
  - **Worker**: Seleccione el _Worker_ público de su locación y dé click en **Save**.
- - **Environment properties**: Dando click en **Add**, agregue las siguientes propiedades de entorno:
+ - **Environment properties**: Dando click en **Add**, agregue las siguientes propiedades de entorno: TRADUCIR AL ESPAÑOL
    - `apikey` an IBM Cloud API Key
    - `cluster` the name of your IKS cluster where you will be deploying the sample app
    - `clusterNamespace` the namespace in your cluster where the app will be deployed (default: `prod`) (**\<su-nombre>-ns**)
@@ -71,9 +73,15 @@ En la vista **Overview** obtendremos los nombres de las integraciones creadas. D
    - `repository` the source git repository where your resources are cloned (default: `https://github.com/open-toolchain/hello-tekton`). Change this if you are forking this repo
    - `revision` the branch of the source git repository where your resources are cloned (default: `master`).
 
-INGRESAR IMAGEN 1
+### Agregar Trigger
 
+Arriba a la izquierda dé click sobre el nombre del _Pipeline_ para volver al apartado del _Delivery Pipeline_, encontrará una ventana de _triggers_ vacía, dé click en **Add** > **Manual**, en el parámetro **Trigger name** agregue un nombre para su _trigger_ y deje el resto de parámetros por defecto y dé click en **Add**.
 
+### Ejecutar el Delivery Pipeline
+Se encontrará nuevamente en el apartado de su _Delivery Pipeline_ con el _trigger_ configurado, dé click en **Run** > **Run**, se ejecutará el Pipeline, este proceso toma aproximandamente 3 minutos.
+
+### Verificar la creación del Hello World en Openshift
+Ingrese a la consola web de Openshift de su cluster, encontrará un proyecto con el nombre del _clusterNamespace_ que configuró, en el apartado **Topology** dé click sobre el botón **Open URL** y encontrará un mensaje "Welcome to IBM Cloud DevOps with Tekton. Let's go use the Continuous Delivery Service". Con esto finaliza el despliegue del hola mundo de Tekton en IBM Cloud.
 
 
 
