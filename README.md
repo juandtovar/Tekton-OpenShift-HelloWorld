@@ -63,16 +63,16 @@ INGRESAR IMAGEN 1
 En la vista **Overview** obtendremos los nombres de las integraciones creadas. Dé click sobre la integración del _Delivery Pipeline_. Llene los apartados de la siguiente manera:
  - **Definitions**: Dé click en **Add** y seleccione su repositorio agregado anteriormente y dé click en **Add** > **Save**.
  - **Worker**: Seleccione el _Worker_ público de su locación y dé click en **Save**.
- - **Environment properties**: Dando click en **Add**, agregue las siguientes propiedades de entorno: TRADUCIR AL ESPAÑOL
-   - `apikey` an IBM Cloud API Key
-   - `cluster` the name of your IKS cluster where you will be deploying the sample app
-   - `clusterNamespace` the namespace in your cluster where the app will be deployed (default: `prod`) (**\<su-nombre>-ns**)
-   - `clusterRegion` the region where your IKS cluster is located (default: `us-south`)
-   - `registryNamespace` the IBM Cloud Container Registry namespace where the app image will be built and stored. (**tekton-handson**)
-   - `registryRegion` the region where your  IBM Cloud Container Registry is located (default: `us-south`)
-   - `repository` the source git repository where your resources are cloned (default: `https://github.com/open-toolchain/hello-tekton`). Change this if you are forking this repo
-   - `revision` the branch of the source git repository where your resources are cloned (default: `master`).
-
+ - **Environment properties**: Dando click en **Add**, agregue las siguientes propiedades de entorno:
+   - `apikey`: El apikey de su cuenta de IBM Cloud, esta valor debe ser ingresado como **Secure value** ya que es un acceso directo a los recurso de su cuenta y debe estar oculto en todos los entornos.
+   - `cluster`: El nombre de su cluster de Kubernetes.
+   - `clusterNamespace`: El nombre del poryecto que se creará en Kubernetes, use el siguiente formato \<su-nombre>-ns.
+   - `clusterRegion`: La región de su cluster de Kubernetes, por defecto "us-south".
+   - `registryNamespace`: El _namespace_ del registro de contenedores de IBM cloude donde se construirá y se almacenará la imagen a crear, use "tekton-handson".
+   - `registryRegion`: La región del registro de contenedores de IBM Cloud, por defecto "us-south".
+   - `repository` El repositorio de Github de los recurso (`https://github.com/juandtovar/Tekton-OpenShift-HelloWorld`).
+   - `revision`: La rama de los recursos del repositorio, por defecto "master".
+  
 ### Agregar Trigger
 
 Arriba a la izquierda dé click sobre el nombre del _Pipeline_ para volver al apartado del _Delivery Pipeline_, encontrará una ventana de _triggers_ vacía, dé click en **Add** > **Manual**, en el parámetro **Trigger name** agregue un nombre para su _trigger_ y deje el resto de parámetros por defecto y dé click en **Add**.
@@ -80,10 +80,14 @@ Arriba a la izquierda dé click sobre el nombre del _Pipeline_ para volver al ap
 ### Ejecutar el Delivery Pipeline
 Se encontrará nuevamente en el apartado de su _Delivery Pipeline_ con el _trigger_ configurado, dé click en **Run** > **Run**, se ejecutará el Pipeline, este proceso toma aproximandamente 3 minutos.
 
+INGRESAR IMAGEN DEL RUN
+
+INGRESAR IMAGEN DEL PIPELINE RUN
+
 ### Verificar la creación del Hello World en Openshift
 Ingrese a la consola web de Openshift de su cluster, encontrará un proyecto con el nombre del _clusterNamespace_ que configuró, en el apartado **Topology** dé click sobre el botón **Open URL** y encontrará un mensaje "Welcome to IBM Cloud DevOps with Tekton. Let's go use the Continuous Delivery Service". Con esto finaliza el despliegue del hola mundo de Tekton en IBM Cloud.
 
-
+INGRESAR IMAGEN DE LA VISTA TOPOLOGY
 
 
 
