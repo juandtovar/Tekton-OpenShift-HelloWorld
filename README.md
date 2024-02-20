@@ -1,5 +1,24 @@
-#     Tekton-OpenShift-HelloWorld
+# Tekton-OpenShift-HelloWorld
+
 _Este repositorio contiene los archivos necesarios para desplegar un "Hola mundo" usando pipelines de Tekton en un cluster de Red Hat Openshift_
+
+
+
+
+## Índice
+
+1. [Tekton-OpenShift-Hello World](#tekton-openshift-hello-world)
+2. [Prerrequisitos](#prerrequisitos)
+3. [Procedimiento](#procedimiento)
+    1. [Crear servicio de Continuous Delivery en IBM Cloud](#crear-servicio-de-continuous-delivery-en-ibm-cloud)
+    2. [Clonar/Descargar repositorio de Github](#clonardescargar-repositorio-de-github)
+    3. [Crear servicio de Toolchain en IBM Cloud](#crear-servicio-de-toolchain-en-ibm-cloud)
+    4. [Agregar Github y Delivery Pipeline](#agregar-github-y-delivery-pipeline)
+    5. [Configuración Delivery Pipeline](#configuración-delivery-pipeline)
+    6. [Agregar Trigger](#agregar-trigger)
+    7. [Ejecutar el Delivery Pipeline](#ejecutar-el-delivery-pipeline)
+    8. [Verificar la creación del Hello World en Openshift](#verificar-la-creación-del-hello-world-en-openshift)
+4. [Referencias](#referencias)
 
 
 
@@ -43,7 +62,7 @@ Llene los siguientes campos:
 Dé click en **Create**.
 
 ### Agregar Github y Delivery Pipeline
-Se encontrará en la pestaña **Overview**, dé click en **Add** > **Github**, llené los siguientes campos:
+Se encontrará en la pestaña **Overview**, dé click en **Add** > **Github**, llene los siguientes campos:
  - **GitHub Server**: Seleccione _Github_.
  - **Auth type**: Seleccione _OAtuh_.
  - **Repository type**: Seleccione _Existing_.
@@ -81,7 +100,7 @@ Dé click sobre la integración del _Delivery Pipeline_. Llene los apartados de 
 Arriba a la izquierda dé click sobre el nombre del _Pipeline_ para volver al apartado del _Delivery Pipeline_, encontrará una ventana de _triggers_ vacía, dé click en **Add** > **Manual**, en el parámetro **Trigger name** agregue un nombre para su _trigger_ y deje el resto de parámetros por defecto y dé click en **Add**.
 
 ### Ejecutar el Delivery Pipeline
-Se encontrará nuevamente en el apartado de su _Delivery Pipeline_ con el _trigger_ configurado, dé click en **Run** > **Run**, se ejecutará el Pipeline, este proceso toma aproximandamente 3 minutos.
+Se encontrará nuevamente en el apartado de su _Delivery Pipeline_ con el _trigger_ configurado, dé click en **Run** > **Run**, se ejecutará el Pipeline, este proceso toma aproximadamente 3 minutos.
 
 <img width="90" alt="workspace" src="images/run.png">
 
@@ -95,19 +114,11 @@ Ingrese a la consola web de Openshift de su cluster, encontrará un proyecto con
 <img width="150" alt="workspace" src="images/hello-app.png">
 
 
+## Referencias
 
-
-
-
-
-
-
-
+- [Working with Tekton pipelines](https://cloud.ibm.com/docs/ContinuousDelivery?topic=ContinuousDelivery-tekton-pipelines&interface=ui)
 
 
 
 
 Autores: IBM Cloud Tech Sales - Juan Diego Tovar Cárdenas.
-
-### Links
-Use a Tekton pipeline to build and deploy a simple hello world node application with IBM Cloud Devops ( https://cloud.ibm.com/devops).
