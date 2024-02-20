@@ -58,10 +58,14 @@ Ya queda configurado el repositorio, ahora se debe agregar el _Delivery Pipeline
  - Dé click en **Create Integration**.
 Si no hemos creado el _Continuous Delivery_ o lo creamos en un grupo de recursos distinto, se obtiene un mensaje de advertencia donde nos pedirá crearlo _Continuous Delivery service required_.
 
-<img width="900" alt="workspace" src="images/toolchain.png">
+
 
 ### Configuración Delivery Pipeline
-En la vista **Overview** obtendremos los nombres de las integraciones creadas. Dé click sobre la integración del _Delivery Pipeline_. Llene los apartados de la siguiente manera:
+En la vista **Overview** obtendremos los nombres de las integraciones creadas.
+
+<img width="900" alt="workspace" src="images/toolchain.png">
+
+Dé click sobre la integración del _Delivery Pipeline_. Llene los apartados de la siguiente manera:
  - **Definitions**: Dé click en **Add** y seleccione su repositorio agregado anteriormente y dé click en **Add** > **Save**.
  - **Worker**: Seleccione el _Worker_ público de su locación y dé click en **Save**.
  - **Environment properties**: Dando click en **Add**, agregue las siguientes propiedades de entorno:
