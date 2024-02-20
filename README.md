@@ -85,7 +85,7 @@ Se encontrará nuevamente en el apartado de su _Delivery Pipeline_ con el _trigg
 
 Cuando termine el despliegue verá que el parámetro _Recent runs_ de su trigger tiene un barra verde, al dar click en ella encontrará algo parecido a lo siguiente junto con los _logs_.
 
-<img width="250" alt="workspace" src="images/pipeline.png">
+<img width="250" alt="workspace" src="images/pipeline.jpeg">
 
 ### Verificar la creación del Hello World en Openshift
 Ingrese a la consola web de Openshift de su cluster, encontrará un proyecto con el nombre del _clusterNamespace_ que configuró, en el apartado **Topology** dé click sobre el botón **Open URL** y encontrará un mensaje "Welcome to IBM Cloud DevOps with Tekton. Let's go use the Continuous Delivery Service". Con esto finaliza el despliegue del hola mundo de Tekton en IBM Cloud.
