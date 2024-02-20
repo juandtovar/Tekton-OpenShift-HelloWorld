@@ -58,10 +58,14 @@ Ya queda configurado el repositorio, ahora se debe agregar el _Delivery Pipeline
  - Dé click en **Create Integration**.
 Si no hemos creado el _Continuous Delivery_ o lo creamos en un grupo de recursos distinto, se obtiene un mensaje de advertencia donde nos pedirá crearlo _Continuous Delivery service required_.
 
-<img width="900" alt="workspace" src="images/toolchain.png">
+
 
 ### Configuración Delivery Pipeline
-En la vista **Overview** obtendremos los nombres de las integraciones creadas. Dé click sobre la integración del _Delivery Pipeline_. Llene los apartados de la siguiente manera:
+En la vista **Overview** obtendremos los nombres de las integraciones creadas.
+
+<img width="900" alt="workspace" src="images/toolchain.png">
+
+Dé click sobre la integración del _Delivery Pipeline_. Llene los apartados de la siguiente manera:
  - **Definitions**: Dé click en **Add** y seleccione su repositorio agregado anteriormente y dé click en **Add** > **Save**.
  - **Worker**: Seleccione el _Worker_ público de su locación y dé click en **Save**.
  - **Environment properties**: Dando click en **Add**, agregue las siguientes propiedades de entorno:
@@ -85,7 +89,7 @@ Se encontrará nuevamente en el apartado de su _Delivery Pipeline_ con el _trigg
 
 Cuando termine el despliegue verá que el parámetro _Recent runs_ de su trigger tiene un barra verde, al dar click en ella encontrará algo parecido a lo siguiente junto con los _logs_.
 
-<img width="250" alt="workspace" src="images/pipeline.png">
+<img width="250" alt="workspace" src="images/pipeline.jpeg">
 
 ### Verificar la creación del Hello World en Openshift
 Ingrese a la consola web de Openshift de su cluster, encontrará un proyecto con el nombre del _clusterNamespace_ que configuró, en el apartado **Topology** dé click sobre el botón **Open URL** y encontrará un mensaje "Welcome to IBM Cloud DevOps with Tekton. Let's go use the Continuous Delivery Service". Con esto finaliza el despliegue del hola mundo de Tekton en IBM Cloud.
