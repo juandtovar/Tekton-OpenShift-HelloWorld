@@ -19,7 +19,7 @@ _Este repositorio contiene los archivos necesarios para desplegar un "Hola mundo
 ### Crear servicio de _Continuous Delivery_ en IBM Cloud
 En IBM Cloud entre al apartado **Catalog** > **Developer tools** > **Continuous Delivery**.
 
-<img width="700" alt="workspace" src="images/pipeline.gif">
+<img width="700" alt="workspace" src="images/continuousdelivery.gif">
 
 Llene los siguientes campos:
  - **Select a location**: Selecione la locación donde está su cluster.
