@@ -19,7 +19,7 @@ _Este repositorio contiene los archivos necesarios para desplegar un "Hola mundo
 ### Crear servicio de _Continuous Delivery_ en IBM Cloud
 En IBM Cloud entre al apartado **Catalog** > **Developer tools** > **Continuous Delivery**.
 
-INGRESAR GIF 1
+<img width="700" alt="workspace" src="images/pipeline.gif">
 
 Llene los siguientes campos:
  - **Select a location**: Selecione la locación donde está su cluster.
@@ -34,7 +34,7 @@ En su cuenta de Github copie el contenido de este repositorio.
 ### Crear servicio de _Toolchain_ en IBM Cloud
 En IBM Cloud entre al apartado **Catalog** > **Developer tools** > **Toolchain** > **Build your own**. 
 
-INGRESAR GIF 2
+<img width="700" alt="workspace" src="images/toolchain.gif">
 
 Llene los siguientes campos:
   - **Toolchain name**: Ingrese un nombre para el _toolchain_.
