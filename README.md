@@ -29,7 +29,7 @@ Llene los siguientes campos:
 Acepte términos y condiciones y dé click en **Create**
 
 ### Clonar/Descargar repositorio de Github
-En su cuenta de Github copie el contenido de este repositorio.
+En su cuenta de Github cree un repositorio y copie el contenido de este repositorio.
 
 ### Crear servicio de _Toolchain_ en IBM Cloud
 En IBM Cloud entre al apartado **Catalog** > **Developer tools** > **Toolchain** > **Build your own**. 
@@ -57,8 +57,6 @@ Ya queda configurado el repositorio, ahora se debe agregar el _Delivery Pipeline
   - **Pipeline type**: Seleccione _Tekton_.
  - Dé click en **Create Integration**.
 Si no hemos creado el _Continuous Delivery_ o lo creamos en un grupo de recursos distinto, se obtiene un mensaje de advertencia donde nos pedirá crearlo _Continuous Delivery service required_.
-
-
 
 ### Configuración Delivery Pipeline
 En la vista **Overview** obtendremos los nombres de las integraciones creadas.
