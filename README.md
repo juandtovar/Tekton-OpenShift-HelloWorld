@@ -1,5 +1,5 @@
 #     Tekton-OpenShift-HelloWorld
-_Este repositorio contiene los archivos necesarios para generar un "Hola mundo" usando pipelines de Tekton en un cluster de Red Hat Openshift_
+_Este repositorio contiene los archivos necesarios para desplegar un "Hola mundo" usando pipelines de Tekton en un cluster de Red Hat Openshift_
 
 
 
@@ -83,7 +83,9 @@ Se encontrará nuevamente en el apartado de su _Delivery Pipeline_ con el _trigg
 
 <img width="90" alt="workspace" src="images/run.png">
 
-INGRESAR IMAGEN DEL PIPELINE RUN
+Cuando termine el despliegue verá que el parámetro _Recent runs_ de su trigger tiene un barra verde, al dar click en ella encontrará algo parecido a lo siguiente junto con los _logs_.
+
+<img width="250" alt="workspace" src="images/pipeline.png">
 
 ### Verificar la creación del Hello World en Openshift
 Ingrese a la consola web de Openshift de su cluster, encontrará un proyecto con el nombre del _clusterNamespace_ que configuró, en el apartado **Topology** dé click sobre el botón **Open URL** y encontrará un mensaje "Welcome to IBM Cloud DevOps with Tekton. Let's go use the Continuous Delivery Service". Con esto finaliza el despliegue del hola mundo de Tekton en IBM Cloud.
