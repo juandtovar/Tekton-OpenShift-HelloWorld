@@ -80,14 +80,14 @@ Arriba a la izquierda dé click sobre el nombre del _Pipeline_ para volver al ap
 ### Ejecutar el Delivery Pipeline
 Se encontrará nuevamente en el apartado de su _Delivery Pipeline_ con el _trigger_ configurado, dé click en **Run** > **Run**, se ejecutará el Pipeline, este proceso toma aproximandamente 3 minutos.
 
-INGRESAR IMAGEN DEL RUN
+<img width="90" alt="workspace" src="images/run.png">
 
 INGRESAR IMAGEN DEL PIPELINE RUN
 
 ### Verificar la creación del Hello World en Openshift
 Ingrese a la consola web de Openshift de su cluster, encontrará un proyecto con el nombre del _clusterNamespace_ que configuró, en el apartado **Topology** dé click sobre el botón **Open URL** y encontrará un mensaje "Welcome to IBM Cloud DevOps with Tekton. Let's go use the Continuous Delivery Service". Con esto finaliza el despliegue del hola mundo de Tekton en IBM Cloud.
 
-INGRESAR IMAGEN DE LA VISTA TOPOLOGY
+<img width="150" alt="workspace" src="images/hello-app.png">
 
 
 
