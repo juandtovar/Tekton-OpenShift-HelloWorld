@@ -51,13 +51,14 @@ Se encontrará en la pestaña **Overview**, dé click en **Add** > **Github**, l
  - **Git Integration Owner**: Seleccione su nombre de usuario de Github.
  - Deje los demás campos por defecto.
  - Dé click en **Create Integration**.
+
 Ya queda configurado el repositorio, ahora se debe agregar el _Delivery Pipeline_, nuevamente dé click en **Add** > **Delivery Pipeline**, llené los siguientes campos:
   - **Pipeline name**: Un nombre para su _Pipeline_.
   - **Pipeline type**: Seleccione _Tekton_.
  - Dé click en **Create Integration**.
 Si no hemos creado el _Continuous Delivery_ o lo creamos en un grupo de recursos distinto, se obtiene un mensaje de advertencia donde nos pedirá crearlo _Continuous Delivery service required_.
 
-INGRESAR IMAGEN 1
+<img width="900" alt="workspace" src="images/toolchain.png">
 
 ### Configuración Delivery Pipeline
 En la vista **Overview** obtendremos los nombres de las integraciones creadas. Dé click sobre la integración del _Delivery Pipeline_. Llene los apartados de la siguiente manera:
